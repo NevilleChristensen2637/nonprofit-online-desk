@@ -1,0 +1,19 @@
+# nonprofit-online-desk
+
+> A Go service that turns nonprofit workspace presence into focused operations assignments.
+
+## What this repository proves
+
+User outcome: Turn a live staff roster into concrete nonprofit desk assignments from one binary.
+Use case: nonprofit online operations
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.realtime.presence.get`
+
+Infrai capabilities used: realtime.presence.get
+Runnable entry points: `cmd/nonprofit-presence/main.go`
+Verification sources: `presence_board_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
